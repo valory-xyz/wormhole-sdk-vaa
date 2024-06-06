@@ -1,13 +1,11 @@
-Ez Mode 
+Wormhole SDK VAA
 -------
 
-Dummy simple demo for the [connect-sdk](https://github.com/wormhole-foundation/connect-sdk)
+VAA management based on the [connect-sdk](https://github.com/wormhole-foundation/connect-sdk)
 
 # Setup
 
 ```sh
-git clone git@github.com:barnjamin/ezmode.git
-cd ezmode
 yarn
 ```
 
@@ -22,7 +20,20 @@ SOL_PRIVATE_KEY="BASE_58_PRIVATE_KEY"
 ETH_PRIVATE_KEY="BASE_16_PRIVATE_KEY"
 ```
 
-# Run it
+# Run to get VAA and create message account
+
+Get a VAA and parse it
+```sh
+yarn vaa
+```
+
+Validate signatures and create a posted account with a message
+```sh
+yarn msg
+```
+
+
+# Other scripts
 
 Token Transfer
 
@@ -36,20 +47,8 @@ Native USDC Transfer via CCTP
 yarn cctp
 ```
 
-Core messaging example
-
-```sh
-yarn msg
-```
-
 Create a wrapped token
 
 ```sh
 yarn create
-```
-
-
-Get a VAA and parse it
-```sh
-yarn vaa
 ```
