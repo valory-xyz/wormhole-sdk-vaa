@@ -13,6 +13,7 @@
     "cctp": "tsx src/cctp.ts",
     "vaa": "tsx src/getVAA.ts",
     "msg": "tsx src/messaging.ts",
+    "dev-msg": "tsx src/devnet_messaging.ts",
     "config": "tsx src/config.ts",
     "gateway": "tsx src/gateway.ts",
     "router":"tsx src/router.ts"
