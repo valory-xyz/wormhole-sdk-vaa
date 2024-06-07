@@ -27,9 +27,14 @@ Get a VAA and parse it
 yarn vaa
 ```
 
-Validate signatures and create a posted account with a message
+Validate signatures and create a posted account with a message on Solana Mainnet
 ```sh
 yarn msg
+```
+
+Validate signatures and create a posted account with a message on Solana Devnet
+```sh
+yarn dev-msg
 ```
 
 
