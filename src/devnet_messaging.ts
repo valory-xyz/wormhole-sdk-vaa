@@ -35,7 +35,7 @@ import { getStuff } from "./helpers.js";
     emitter: new UniversalAddress(
       "000000000000000000000000471b3f60f08c50dd0ecba1bcd113b66fcc02b63d"
     ),
-    sequence: 12n,
+    sequence: 13n,
   };
   const apiUrl = "https://api.testnet.wormholescan.io";
   const vaa = await api.getVaa(apiUrl, whm, "Uint8Array");
@@ -56,9 +56,9 @@ import { getStuff } from "./helpers.js";
   console.log(await signSendWait(chainCtx, verifyTxs, signer));
 
   // Signature verification tx:
-  // s7cYqhFsw46bkSarszjpbVxuTTBxWCRvgGKkmYybunZwye3txsj1Xs3G6w4vNe5rK799NzuBPBxQ7qtEkiPojjt
+  // 2hBwGyTfyXMEeC2M1hfoWoocNaC9sWt7BpopfikJe4BT9sxB839wt4QzRoeG2ySwLB5UhQJubNdiYJnqGuGekdPF
 
   // postVAA tx:
-  // 5a5SsbepakWG8xgrn8B6xMn1BoWYrHPwbd3KtVSP16bwDrsWkjvdPegPs8QWniKTudXozMK4CqHm99TtoVBCw7y
-  // Created "posted" account: ChU6y2AaWctbTZDRJNJgGVR5yXMahv9d7Ev894tp57J1
+  // 5xiK7ZHXnhPhYR6D9D6MSMo1nN1Wb5sEf3XAJczgaKis94DZm9kWGf3QTaLKXZkTueM35dGW6KcZQHjjj5QiihYC
+  // Created "posted" account: Dy9s52xnX2yNsSE9Z2c24eRMfTLEzd46iJn7hYkk83nW
 })();
